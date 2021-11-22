@@ -34,7 +34,7 @@ int wholenote = (60000 * 4) / tempo;
 int divider = 0, noteDuration = 0;
 
 // 2 servomotorer: servo1 og servo2
-static const int servo1Pin = 14; //Endre til rett pin, 15 betyr
+static const int servo1Pin = 14;
 static const int servo2Pin = 18;
 Servo servo1;
 Servo servo2;
@@ -114,7 +114,7 @@ void loop() {
 
   // if-setning for ultralydssensoren som starter random-funksjonen og en ny if-setning,
   // dersom avstanden den registrerer en bevegelse mellom 2 og 10 cm.
-  if(distance>10 || distance<2) Serial.println("Out of range");
+  if(distance > 12) Serial.println("Out of range");
   //legg inn lyd til hvis ikke registrering av hånd her !!!
   else
   {if (randomnum == 1){ // setter i gang buzzeren hvis det randome nummeret = 1
@@ -148,11 +148,11 @@ void loop() {
    else if (randomnum == 3) { // setter i gang servo2 hvis det randome nummeret = 3
      for(int posDegrees = 0; posDegrees <= 180; posDegrees++) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    for(int posDegrees = 180; posDegrees >= 0; posDegrees--) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    Serial.println("servo 2");
    }
@@ -174,7 +174,7 @@ void loop() {
 
   // if-setning for ultralydssensoren som starter random-funksjonen og en ny if-setning,
   // dersom avstanden den registrerer en bevegelse mellom 2 og 10 cm.
-  if(distance>10 || distance<2) Serial.println("Out of range");
+  if(distance>12) Serial.println("Out of range");
   //legg inn lyd til hvis ikke registrering av hånd her !!!
   else
   {if (randomnum == 1){ // setter i gang buzzeren hvis det randome nummeret = 1
@@ -208,11 +208,11 @@ void loop() {
    else if (randomnum == 3) { // setter i gang servo2 hvis det randome nummeret = 3
      for(int posDegrees = 0; posDegrees <= 180; posDegrees++) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    for(int posDegrees = 180; posDegrees >= 0; posDegrees--) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    Serial.println("servo 2");
    }
@@ -234,7 +234,7 @@ void loop() {
 
   // if-setning for ultralydssensoren som starter random-funksjonen og en ny if-setning,
   // dersom avstanden den registrerer en bevegelse mellom 2 og 10 cm.
-  if(distance>10 || distance<2) Serial.println("Out of range");
+  if(distance>12) Serial.println("Out of range");
   //legg inn lyd til hvis ikke registrering av hånd her !!!
   else
   {if (randomnum == 1){ // setter i gang buzzeren hvis det randome nummeret = 1
@@ -268,11 +268,11 @@ void loop() {
    else if (randomnum == 3) { // setter i gang servo2 hvis det randome nummeret = 3
      for(int posDegrees = 0; posDegrees <= 180; posDegrees++) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    for(int posDegrees = 180; posDegrees >= 0; posDegrees--) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    Serial.println("servo 2");
    }
@@ -294,7 +294,7 @@ void loop() {
 
   // if-setning for ultralydssensoren som starter random-funksjonen og en ny if-setning,
   // dersom avstanden den registrerer en bevegelse mellom 2 og 10 cm.
-  if(distance>10 || distance<2) Serial.println("Out of range");
+  if(distance>12) Serial.println("Out of range");
   //legg inn lyd til hvis ikke registrering av hånd her !!!
   else
   {if (randomnum == 1){ // setter i gang buzzeren hvis det randome nummeret = 1
@@ -328,11 +328,11 @@ void loop() {
    else if (randomnum == 3) { // setter i gang servo2 hvis det randome nummeret = 3
      for(int posDegrees = 0; posDegrees <= 180; posDegrees++) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    for(int posDegrees = 180; posDegrees >= 0; posDegrees--) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    Serial.println("servo 2");
    }
@@ -354,7 +354,7 @@ void loop() {
 
   // if-setning for ultralydssensoren som starter random-funksjonen og en ny if-setning,
   // dersom avstanden den registrerer en bevegelse mellom 2 og 10 cm.
-  if(distance>10 || distance<2) Serial.println("Out of range");
+  if(distance>12) Serial.println("Out of range");
   //legg inn lyd til hvis ikke registrering av hånd her !!!
   else
   {if (randomnum == 1){ // setter i gang buzzeren hvis det randome nummeret = 1
@@ -388,11 +388,11 @@ void loop() {
    else if (randomnum == 3) { // setter i gang servo2 hvis det randome nummeret = 3
      for(int posDegrees = 0; posDegrees <= 180; posDegrees++) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    for(int posDegrees = 180; posDegrees >= 0; posDegrees--) {
    servo2.write(posDegrees);
-   delay(20);
+   delay(2);
    }
    Serial.println("servo 2");
    }
